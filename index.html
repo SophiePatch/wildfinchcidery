@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Wild Finch Ciderworks — bright, orchard-driven ciders made with local fruit. Tastings, tours, and seasonal events." />
+  <meta name="author" content="Wild Finch Ciderworks" />
+  <title>Wild Finch Ciderworks | Home</title>
+  <link rel="icon" type="image/bird-icon" href="assets/bird-icon.jpg" />
+
+  <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <!-- END LOADING BOOTSTRAP CSS -->
+
+    <!-- Custom styles -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Wild Finch Ciderworks" height="40">
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header 
+    class="bg-white text-dark" 
+    style="background: url('assets/images/hero-wildfinch.jpg') center/cover no-repeat; min-height:100vh;"
+  >
+    <div class="container px-4 text-center" style="padding-top: 5.5rem;">
+      <h1 class="fw-bolder">Bright Ciders. Wilder Flavors.</h1>
+      <p class="lead">Small-batch cider crafted from local fruit — lively, balanced, and made for sharing outdoors.</p>
+      <!-- Centered buttons container -->
+      <div class="d-flex justify-content-center mt-3 flex-wrap">
+        <a class="btn btn-primary btn-lg custom-btn m-2" href="products.html">Our Ciders</a>
+        <a class="btn btn-outline-primary btn-lg custom-btn m-2" href="contact.html">Book a Tasting</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8">
+          <h2>Welcome to Wild Finch</h2>
+          <p class="lead">
+            We handcraft bright, fruit-forward ciders inspired by the seasons. Our small batches highlight locality — apples, pears, and foraged additions from nearby farms.
+          </p>
+          <p>
+            Visit our tasting garden for flights, seasonal releases, and weekend music. We celebrate low-intervention fermentation and vibrant, approachable flavors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8">
+          <h2>What we offer</h2>
+          <p class="lead">
+            Tastings, guided orchard tours, private events, and a rotating menu of limited-release ciders.
+          </p>
+          <p>
+            Guided orchard & cellar tours, seasonal tasting flights, and private party bookings & catering.
+          </p>
+          <div class="text-center mt-3">
+            <a class="btn btn-primary btn-lg custom-btn" href="contact.html">Reserve a Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8">
+          <h2>Plan your visit</h2>
+          <p class="lead">
+            Open weekends and by appointment. Contact us for group bookings or special tastings.
+          </p>
+          <div class="text-center mt-3">
+            <a class="btn btn-outline-primary btn-lg custom-btn" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">
+        Copyright &copy; Wild Finch Ciderworks <span id="year"></span>
+      </p>
+    </div>
+  </footer>
+
+    <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Core theme JS - DO NOT DELETE -->
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('mainNav');
+
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down → hide navbar
+        navbar.classList.add('nav-hidden');
+      } else {
+        // Scrolling up → show navbar
+        navbar.classList.remove('nav-hidden');
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  </script>
+
+  <script src="js/scripts.js"></script>
+  <!-- END LOADING JAVASCRIPT -->
+</body>
+</html>
